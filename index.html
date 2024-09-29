@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIAP</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+        <section>
+            <img class="logoFiap" src="./assets/images/logoFIAP.png" alt="logotipo da FIAP">
+            <p>Essa é uma página demonstrativa para</p>
+
+            <button onclick="window.location.href='./assets/pages/professorHome.html';">Visão Professor</button>
+            <button onclick="window.location.href='./assets/pages/alunoHome.html';">Visão Aluno</button>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

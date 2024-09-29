@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- fonte awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIAP</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="logoFiap" src="../images/logoFIAP.png" alt="logotipo da FIAP">
+        <nav id="menu">
+            <ul>
+                <li><a href="../pages/alunoHome.html">Home</a></li>
+                <li><a href="../pages/alunoFinanceiro.html">Financeiro</a></li>
+                <li><a href="../pages/alunoEstudos.html" class="active">Estudos</a></li>
+                <li><a href="../pages/alunoAtividades.html">Atividades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Estudos</h1>
+            <div>
+                <h2>Capítulo 2</h2>
+                <div class="divContainer">
+                    <div class="divHighlight">
+                        <h3>Aula 01</h3>
+                    </div>
+                    <a href="../pages/paginaNaoEncontradda.html" class="aContainer"><i
+                            class="fa-solid fa-video"></i>acessar
+                        aula
+                    </a>
+                    <a id="openModalBtn"><i class="fa-solid fa-person-chalkboard"></i>atividade do capítulo
+                    </a>
+                </div>
+                <div class="divContainer">
+                    <div class="divHighlight">
+                        <h3>Aula 02</h3>
+                    </div>
+                    <a href="../pages/paginaNaoEncontradda.html" class="aContainer"><i
+                            class="fa-solid fa-video"></i>acessar
+                        aula
+                    </a>
+                    <a id="openModalBtn"><i class="fa-solid fa-person-chalkboard"></i>atividade do capítulo
+                    </a>
+                </div>
+                <div class="divContainer">
+                    <div class="divHighlight">
+                        <h3>Aula 03</h3>
+                    </div>
+                    <a href="../pages/paginaNaoEncontradda.html" class="aContainer"><i
+                            class="fa-solid fa-video"></i>acessar
+                        aula
+                    </a>
+                    <a id="openModalBtn"><i class="fa-solid fa-person-chalkboard"></i>atividade do capítulo
+                    </a>
+                </div>
+            </div>
+
+
+            <div>
+                <h2>Capítulo 1</h2>
+                <div class="divContainer">
+                    <div class="divHighlight">
+                        <h3>Aula 01</h3>
+                    </div>
+                    <a href="../pages/paginaNaoEncontradda.html" class="aContainer"><i
+                            class="fa-solid fa-video"></i>acessar aula
+                    </a>
+                    <a id="openModalBtn"><i class="fa-solid fa-person-chalkboard"></i>atividade do capítulo
+                    </a>
+                </div>
+                <div class="divContainer">
+                    <div class="divHighlight">
+                        <h3>Aula 02</h3>
+                    </div>
+                    <a href="../pages/paginaNaoEncontradda.html" class="aContainer"><i
+                            class="fa-solid fa-video"></i>acessar aula
+                    </a>
+                    <a id="openModalBtn"><i class="fa-solid fa-person-chalkboard"></i>atividade do capítulo
+                    </a>
+                </div>
+                <div class="divContainer">
+                    <div class="divHighlight">
+                        <h3>Aula 03</h3>
+                    </div>
+                    <a href="../pages/paginaNaoEncontradda.html" class="aContainer"><i
+                            class="fa-solid fa-video"></i>acessar aula
+                    </a>
+                    <a id="openModalBtn"><i class="fa-solid fa-person-chalkboard"></i>atividade do capítulo
+                    </a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <!-- A Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Conteúdo da Modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Questionário</h2>
+                <form action="/submit" method="post">
+
+                    <label for="pergunta1">Qual tag HTML é usada para criar um hyperlink?</label><br>
+                    <input type="radio" id="link1" name="pergunta1" value="a">
+                    <label for="link1">&lt;a&gt;</label><br>
+                    <input type="radio" id="link2" name="pergunta1" value="link">
+                    <label for="link2">&lt;link&gt;</label><br>
+                    <input type="radio" id="link3" name="pergunta1" value="href">
+                    <label for="link3">&lt;href&gt;</label><br>
+                    <input type="radio" id="link4" name="pergunta1" value="url">
+                    <label for="link4">&lt;url&gt;</label><br><br>
+
+                    <label for="pergunta2">Qual propriedade CSS é usada para mudar a cor do texto?</label><br>
+                    <input type="radio" id="corTexto1" name="pergunta2" value="color">
+                    <label for="corTexto1">color</label><br>
+                    <input type="radio" id="corTexto2" name="pergunta2" value="text-color">
+                    <label for="corTexto2">text-color</label><br>
+                    <input type="radio" id="corTexto3" name="pergunta2" value="font-color">
+                    <label for="corTexto3">font-color</label><br>
+                    <input type="radio" id="corTexto4" name="pergunta2" value="bgcolor">
+                    <label for="corTexto4">bgcolor</label><br><br>
+
+                    <label for="pergunta3">Qual tag HTML é usada para definir um parágrafo?</label><br>
+                    <input type="radio" id="paragrafo1" name="pergunta3" value="p">
+                    <label for="paragrafo1">&lt;p&gt;</label><br>
+                    <input type="radio" id="paragrafo2" name="pergunta3" value="para">
+                    <label for="paragrafo2">&lt;para&gt;</label><br>
+                    <input type="radio" id="paragrafo3" name="pergunta3" value="paragraph">
+                    <label for="paragrafo3">&lt;paragraph&gt;</label><br>
+                    <input type="radio" id="paragrafo4" name="pergunta3" value="div">
+                    <label for="paragrafo4">&lt;div&gt;</label><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <button onclick="window.location.href='../../index.html';">voltar para visões</button>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
